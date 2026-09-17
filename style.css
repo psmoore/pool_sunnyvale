@@ -1,0 +1,145 @@
+/* Sunnyvale Swim Club — Pool Relay preview.
+   Shared by the practice schedule page and both meet schedule pages. */
+
+:root{
+  --blue:    #1b62b5;
+  --blue-d:  #0f4c8a;
+  --navy:    #12395f;
+  --gold:    #eda200;
+  --gold-d:  #b87b00;
+  --ink:     #1f2326;
+  --muted:   #5c666d;
+  --rule:    #d9dde0;
+  --wash:    #f2f5f8;
+  --link:    #2e75b6;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+*,*::before,*::after{ box-sizing:border-box }
+html{ -webkit-text-size-adjust:100% }
+body{ margin:0; color:var(--ink); font-family:var(--font); font-size:16.5px; line-height:1.62;
+  background:#e9edf1;
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,.55) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.55) 75%),
+    linear-gradient(45deg, rgba(255,255,255,.55) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.55) 75%);
+  background-size:38px 38px;
+  background-position:0 0, 19px 19px;
+}
+img{ max-width:100%; display:block }
+a{ color:var(--link) }
+h1,h2,h3{ line-height:1.25; margin:0 0 .5em; color:var(--navy) }
+h1{ font-size:clamp(25px,4.2vw,34px); letter-spacing:.01em; text-align:center;
+  text-transform:uppercase; font-weight:800 }
+h2{ font-size:clamp(20px,3vw,26px); margin-top:0 }
+h3{ font-size:18px }
+
+/* The page sits on a white card over the patterned ground, like sunn.org. */
+.sheet{ max-width:1144px; margin:0 auto; background:#fff }
+.wrap{ max-width:900px; margin:0 auto; padding:0 26px }
+
+.ribbon{ background:#22282b; color:#fff; font-size:14px; line-height:1.55;
+  padding:9px 20px; text-align:center }
+.ribbon b{ color:#ffcb54 }
+.ribbon a{ color:#8fd3ff }
+
+.utility{ background:#fff; font-size:12.5px; color:var(--muted);
+  display:flex; align-items:center; gap:16px; padding:8px 26px; max-width:1144px; margin:0 auto;
+  text-transform:uppercase; letter-spacing:.06em; font-weight:700 }
+.utility .spacer{ margin-left:auto }
+
+nav.main{ background:var(--blue); border-radius:4px; margin:0 auto; max-width:1144px }
+nav.main ul{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap }
+nav.main a{ display:block; padding:14px 17px; color:#fff; text-decoration:none;
+  font-weight:800; font-size:13.5px; letter-spacing:.04em; text-transform:uppercase }
+nav.main a:hover{ background:rgba(255,255,255,.18) }
+nav.main .on a{ background:rgba(255,255,255,.22) }
+nav.main .caret{ opacity:.7; font-size:10px; margin-left:5px }
+
+.brandbar{ display:flex; align-items:center; gap:22px; flex-wrap:wrap;
+  padding:16px 26px 12px; max-width:1144px; margin:0 auto }
+.mark{ text-decoration:none; line-height:.92 }
+.mark .a{ display:block; font-size:44px; font-weight:900; letter-spacing:.01em; color:var(--gold) }
+.mark .b{ display:block; font-size:14px; font-weight:700; letter-spacing:.44em; color:var(--navy) }
+.badge{ border:2px solid var(--navy); border-radius:3px; padding:7px 11px; text-align:center;
+  font-size:10.5px; font-weight:800; line-height:1.25; color:var(--navy); letter-spacing:.04em }
+.badge .big{ display:block; font-size:16px; letter-spacing:.02em }
+.partners{ margin-left:auto; display:flex; gap:18px; align-items:center;
+  font-size:11.5px; font-weight:800; letter-spacing:.08em; color:#8a949b; text-transform:uppercase }
+
+section{ padding:20px 0 30px }
+.lead{ font-size:19px; color:#3b4347; text-align:center }
+.sub{ text-align:center; font-weight:700; font-style:italic; color:var(--navy);
+  font-size:19px; margin:0 0 20px }
+.kicker{ font-weight:800; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--blue); margin:0 0 7px; text-align:center }
+
+/* The calendars break out of the text measure: a month of a whole club needs the width. */
+.cal{ border:1px solid var(--rule); border-radius:5px; overflow:hidden;
+  box-shadow:0 2px 14px rgba(0,0,0,.11); background:#fff; margin:18px 0 10px;
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1420px, calc(100vw - 36px)) }
+.cal iframe{ width:100%; height:760px; border:0; display:block }
+.cal.short iframe{ height:520px }
+.capt{ font-size:14.5px; color:var(--muted); margin:0 0 24px; text-align:center }
+
+.note{ border:1px solid var(--rule); border-left:5px solid var(--blue);
+  background:var(--wash); padding:15px 19px; margin:20px 0; font-size:15.5px }
+.note .hd{ font-weight:800; display:block; margin-bottom:.25em; color:var(--navy) }
+
+/* The dark band that carries the page's argument. */
+.trail{ background:#12395f; color:#dbe6f0; padding:30px 0 34px; margin-top:8px }
+.trail h2{ color:#fff }
+.trail .q{ font-size:clamp(18px,2.4vw,23px); color:#fff; margin:0 0 16px; font-weight:700 }
+.trail p{ color:#b7c9da }
+.trail ol, .trail ul{ margin:0; padding-left:22px; color:#b7c9da; font-size:15.5px }
+.trail li{ margin:.45em 0 }
+.trail b, .trail strong{ color:#fff }
+.trail .answer{ margin-top:20px; padding:14px 18px; background:rgba(237,162,0,.15);
+  border-left:4px solid var(--gold); color:#fdf3e0; font-size:16px }
+.trail .answer b{ color:#fff }
+
+table.sched{ width:100%; border-collapse:collapse; margin:8px 0 22px; font-size:15px }
+table.sched th, table.sched td{ border:1px solid var(--rule); padding:8px 11px; text-align:left }
+table.sched th{ background:var(--wash); font-weight:800; font-size:12.5px;
+  text-transform:uppercase; letter-spacing:.05em; color:var(--navy) }
+table.sched caption{ caption-side:top; text-align:left; font-weight:800; color:var(--navy);
+  padding:14px 0 6px; font-size:16px }
+table.sched td.n{ text-align:center; font-variant-numeric:tabular-nums }
+.scroller{ overflow-x:auto }
+
+ul.meets{ list-style:none; margin:0 0 20px; padding:0; font-size:15.5px }
+ul.meets li{ padding:6px 0; border-bottom:1px solid #eceff1 }
+ul.meets b{ color:var(--navy) }
+ul.meets .loc{ color:var(--muted) }
+.season{ font-weight:800; color:var(--navy); font-size:17px; margin:22px 0 8px;
+  text-transform:uppercase; letter-spacing:.04em }
+
+.qa{ margin:0; padding:0; list-style:none }
+.qa li{ border-top:1px solid var(--rule); padding:14px 0 }
+.qa li:last-child{ border-bottom:1px solid var(--rule) }
+.qa .q{ font-weight:800; color:var(--navy) }
+.qa .a{ color:var(--muted); font-size:15.5px }
+.tag{ display:inline-block; font-size:11px; font-weight:800; letter-spacing:.07em;
+  text-transform:uppercase; padding:2px 8px; border-radius:3px; vertical-align:2px;
+  margin-right:8px }
+.tag.ours{ background:#fdecc8; color:#7a5200 }
+.tag.clash{ background:#fbdcdc; color:#8e2020 }
+.tag.gap{ background:#e2e6ea; color:#3d4a52 }
+
+footer{ background:linear-gradient(100deg,var(--blue),var(--blue-d)); color:#e3edf6;
+  padding:26px 0 34px; font-size:15px }
+footer a{ color:#bfe0ff }
+footer .wrap > p{ margin:.4em 0 }
+footer .small{ font-size:13px; color:#9dbcd8; margin-top:14px }
+
+@media (max-width:760px){
+  .partners{ display:none }
+  .cal iframe{ height:620px }
+}
+
+/* Sub-nav across the three preview pages. */
+nav.sub{ border-bottom:1px solid var(--rule); background:var(--wash) }
+nav.sub ul{ list-style:none; margin:0; padding:0 26px; display:flex; flex-wrap:wrap; gap:2px }
+nav.sub a{ display:block; padding:10px 14px; text-decoration:none; color:var(--muted);
+  font-weight:700; font-size:13.5px; border-bottom:3px solid transparent }
+nav.sub a:hover{ color:var(--blue) }
+nav.sub .on a{ color:var(--navy); border-bottom-color:var(--gold) }
