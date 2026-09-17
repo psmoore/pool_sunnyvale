@@ -342,8 +342,8 @@ AGEGROUP = """
     <div class="wrap">
       <p class="capt">Every meet on the age group schedule, in order, with the venue on each one.
         The arrows move between 2026 and 2027; <b>Month</b> and <b>Week</b> put the meets back
-        among the practices. Meets read <b>12am&ndash;11:59pm</b> because SUNN publishes meet dates
-        and not meet hours &mdash; the two whose hours are published show them.
+        among the practices. A meet that runs over several days appears on each of them, and
+        the two whose hours SUNN publishes show those hours.
         <a href="__VIEW__">Open it full size</a>.</p>
     </div>
   </section>
@@ -481,8 +481,8 @@ SENIOR = """
     <div class="wrap">
       <p class="capt">Every meet a Senior Silver or Senior Gold swimmer is expected to consider,
         with a venue on each one. <b>Both Schedules</b> marks the meets the age group squads
-        attend too. Meets read <b>12am&ndash;11:59pm</b> because SUNN publishes meet dates and not
-        meet hours. <a href="__VIEW__">Open it full size</a>.</p>
+        attend too. A meet that runs over several days appears on each of them.
+        <a href="__VIEW__">Open it full size</a>.</p>
     </div>
   </section>
 
